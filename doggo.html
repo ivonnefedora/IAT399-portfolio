@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ivonne fedora | doggo app</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/hamburgers/hamburgers.min.css">
+  <!-- animation bootstrap -->
+  <link rel="stylesheet" href="css/aos.min.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <!-- icons -->
+  <link rel="stylesheet" href="icons/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+
+    <!-- navbar -->
+    <header class="navigation-bar" data-aos="fade-down">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 col-3"><div class="site-logo"><a href="index.html" class="animsition-link">ivonnefedora</a></div></div>
+          <div class="col-sm-9 col-9 text-right">
+
+            <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <nav class="menu js-menu" role="navigation">
+              <ul class="list-unstyled">
+                <li class="d-md-none d-block active"><a href="index.html" class="animsition-link">Home</a></li>
+                <li><a href="work.html" class="animsition-link">Work</a></li>
+                <li><a href="about.html" class="animsition-link">About</a></li>
+                <li><a href="styleguide.html" class="animsition-link">Styleguide</a></li>
+                <li><a href="contact.html" class="animsition-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>Doggo App</h1>
+            <p>For the final project of a course named "Mobile Computing" in Simon Fraser University, we had to create an app. The app that I chose to create was a dog mating app, called "Doggo". The reason to create a dog app was because I have observed that people socialize with strangers when there are dogs around. I wanted to use technology to connect people. This app allows dog parents to find mates for their dogs, find nearby parks, and chat with other dog parents to meet up for a playdate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end banner -->
+
+    <!-- process -->
+    <section class="portfolio-overlap mb-5" id="next">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row work-detail">
+              <div class="col-md-3">
+                <span class=caption>Date</span>
+                <strong>July 2019</strong>
+              </div>
+              <div class="col-md-3">
+                <span class=caption>Type</span>
+                <strong>Individual project</strong>
+              </div>
+              <div class="col-md-3">
+                <span class=caption>Role</span>
+                <strong>Wireframe, Programming</strong>
+              </div>
+              <div class="col-md-3">
+                <span class=caption>Tools</span>
+                <strong>Java, XML, SQLite Database, JSON, Android Studio</strong>
+              </div>
+            </div>
+
+
+
+            <h2>Initial Interaction Wireframe</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center mb-5"><img src="images/doggo/02.png" alt="Doggo" class="img-fluid"></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <p>Wireframed the app's flow and to give me an idea what the interface design should look like when I program it using Android Studio.</p>
+              </div>
+            </div>
+
+            <h2>Meeting the Requirements</h2>
+            <h4>Atleast Four Activities</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-5"><p class="text-center mb-5"><img src="images/doggo/03.png" alt="Doggo" class="img-fluid" style="width:70%"></p></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>I created 3 main actvities: Parks, Dogs, and Timeline Activity. Supporting actvities such as Login, SignUp, and Chat Activity.</p>
+                <ul>
+    							<li>Parks Activity: after clicking a park it directs users to a map application using implicit intent</li>
+    							<li>Dogs Activity: after clicking a dog’s profile, it will direct users to the Chat Activity.</li>
+    							<li>Chat Activity: Allows user to chat with other dog owners and arrange playdates.</li>
+    							<li>Timeline Activity: using SQLite database, users are able to add, edit, delete major timelines of their dog’s life. In this activity camera is used.</li>
+    							<li>Login + SignUp Activity: saves user’s credentials in Shared Preferences</li>
+    						</ul>
+              </div>
+            </div>
+
+            <h4>Implicit + Explicit Intents</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center mb-5"><img src="images/doggo/12.png" alt="Doggo" class="img-fluid" style="width:100%"></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>SignUp, login activity and bottom navigations from activity to another are explicit intents. Using implicit intents, users are able to get transit directions from other applications available to support that intent. For example, the use of implicit intent when users are getting direction to a chosen park and use of an explicit intent is the bottom navigation bar allowing user navigate between activities.</p>
+              </div>
+            </div>
+
+            <h4>Shared Preferences + SQLite Database</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center mb-5"><img src="images/doggo/13.png" alt="Doggo" class="img-fluid" style="width:100%"></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>User’s profile is saved in the shared preferences. The timeline is saved in SQL database and users are able to edit, add, and delete them. For example, once users sign up, user's information will be saved in Shared Preferences. Implementation of SQLite Database used in Timeline Activity.</p>
+              </div>
+            </div>
+
+            <h4>Use of Sensors</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center mb-5"><img src="images/doggo/11.png" alt="Doggo" class="img-fluid" style="width:100%"></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>The gyroscope sensor is used in the Chat Activity. The sensor is used to change the background color of the Chat Activity. When device is tilted clockwise, the background will be yellow and if it is tilted counter-clockwise, the background will be white.</p>
+              </div>
+            </div>
+
+            <h4>Use of Camera/GPS</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center mb-5"><img src="images/doggo/10.png" alt="Doggo" class="img-fluid" style="width:50%"></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>I used a camera to take pictures and displayed in the timeline activity. The image is saved in an external storage.</p>
+              </div>
+            </div>
+
+            <h2>Bonus Functionality</h2>
+            <h4>Chat Activity</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-5"><p class="text-center mb-5"><img src="images/doggo/06.png" alt="Doggo" class="img-fluid" style="width:50%"></p></p>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <p>The chat activity allows users to chat with other dog owners to arrange play dates and socialize. I build the chat activity using Scaledrone Java API client.</p>
+              </div>
+            </div>
+
+            <p class="text-center mb-5"><video width="35%" height="35%" controls>
+							<source src="images/doggo/app.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video></p>
+
+          </div>
+        </div>
+      </section>
+      <!-- end process -->
+
+      <br>
+      <!-- challenges -->
+      <section class="portfolio-overlap mb-5" id="next">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+
+              <h2>Challenges</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="mb-5">Implementing GPS/Camera: My initial plan was to use GPS to guide users from their current location to the park selected. However, after many trials and watching many tutorials, my app still crashes. So, instead of using GPS, I made it to an explicit intent which direct users to map applications.</p>
+                </div>
+                <div class="col-md-6">
+                  <p>Solution: I used Camera instead and since I ran out of time, I wasn’t able to make the image remain in the ImageView when coming back to that actvity. I was also unable to make each list have a specific image.</p>
+                </div>
+              </div>
+
+              <h2>Reflection</h2>
+              <div class="row">
+                <div class="col-md-12">
+                  <p>This was the first app that I have ever programmed. The course has taught me a lot more about Java and through this course I felt I am more confident in Java than ever before. Nonetheless, this course has taught me about SQLite Database and JSON which I believe is a great asset to have. I believe the Timeline Activity's interface can be better but I am proud of what I have created and I am proud that I was able to achieve all the requirements and combine them within an app.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end challenges -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-md-left text-center">
+              <p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ivonne Fedora
+              </p>
+            </div>
+            <div class="col-md-6 text-md-right text-center footer-social">
+              <a href="#" class="p-3"><span class="icon-mail"></span></a>
+              <a href="#" class="p-3"><span class="icon-linkedin2"></span></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+
+    </div>
+
+    <!-- javascript -->
+    <script src="js/scripts-all.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
