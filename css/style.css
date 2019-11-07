@@ -21,11 +21,13 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
+  color: #ffb70c;
 }
 
 a:hover, a:active, a:focus {
   text-decoration: none;
   outline: none;
+  color: #ffa30c;
 }
 
 
@@ -99,7 +101,7 @@ a:hover, a:active, a:focus {
   height: 2px;
   width: 0;
   left: 0;
-  background: #dc3545;
+  background: #ffb70c;
   -webkit-transition: .15s width ease;
   -o-transition: .15s width ease;
   transition: .15s width ease;
@@ -326,7 +328,7 @@ a:hover, a:active, a:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(220, 53, 69, 0.9);
+  background: rgba(255,183,12, 0.9);
   visibility: hidden; opacity: 0;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -417,16 +419,16 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
-.button.button--red {
-  background: #dc3545;
+.button.button--yellow {
+  background: #ffb70c;
 }
 
-.button.button--red:hover {
+.button.button--yellow:hover {
   text-decoration: none;
   color: #fff;
-  -webkit-box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
-  background: #d32535;
+  -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
+  background: #ffb70c;
 }
 
 /*------------------------FOOTER-------------------------*/
@@ -457,11 +459,11 @@ a:hover, a:active, a:focus {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; f
-  ont-size: 26px;
+  font-size: 26px;
 }
 
 .footer .footer-social a:hover, .footer .footer-social a:focus {
-  color: #dc3545;
+  color: #ffa30c;
   -webkit-transform: scale(1.7);
   -ms-transform: scale(1.7);
   transform: scale(1.7);
