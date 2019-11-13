@@ -69,6 +69,7 @@ a:hover, a:active, a:focus {
 .navigation-bar .site-logo a {
   font-size: 30px;
   color: #000;
+  margin-left: 2em;
 }
 
 .navigation-bar .menu {
@@ -77,6 +78,7 @@ a:hover, a:active, a:focus {
 
 .navigation-bar .menu ul {
   margin-bottom: 0;
+  margin-right: 3em;
 }
 
 .navigation-bar .menu ul li {
@@ -134,6 +136,10 @@ a:hover, a:active, a:focus {
     display: none;
     padding-top: 100px;
     overflow-y: scroll;
+  }
+
+  .navigation-bar .site-logo a {
+    margin-left: 0;
   }
 
   .navigation-bar .menu ul {
