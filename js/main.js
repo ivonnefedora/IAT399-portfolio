@@ -6,6 +6,22 @@ AOS.init({
 jQuery(document).ready(function($){
   'use strict';
 
+  // Scroll to Top
+  // https://codepen.io/matthewcain/pen/ZepbeR
+  var btn = $('#return-to-top');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
 
   // Animsition
   $(".animsition").animsition();
@@ -18,7 +34,7 @@ jQuery(document).ready(function($){
 
   $('a.js-smoothscroll[href^="#"]').click(function () {
     $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+      scrollTop: $( $.attr(this, 'href') ).offset().top - 40
     }, 500);
 
     return false;
@@ -47,7 +63,7 @@ jQuery(document).ready(function($){
 
   // Hamburger Button
   $('.js-toggle-menu').on('click', function(e){
-  	e.preventDefault();
+    e.preventDefault();
 
     var $this = $(this);
 
@@ -68,10 +84,10 @@ jQuery(document).ready(function($){
 
     }
 
-  	if ( $('.menu').is(':visible') ) {
-  		$('.js-menu').fadeOut(300);
-  	} else {
-  		$('.js-menu').fadeIn(300);
-  	}
+    if ( $('.menu').is(':visible') ) {
+      $('.js-menu').fadeOut(300);
+    } else {
+      $('.js-menu').fadeIn(300);
+    }
   })
 });

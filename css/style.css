@@ -30,6 +30,67 @@ a:hover, a:active, a:focus {
   color: #ffa30c;
 }
 
+/*-----------------------BACK TO TOP----------------------*/
+/* https://codepen.io/matthewcain/pen/ZepbeR */
+#return-to-top {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  background-color: #ffb70c;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#return-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+}
+#return-to-top:hover {
+  cursor: pointer;
+  background-color: #ffb70c;
+  -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
+}
+#return-to-top:active {
+  background-color: #ffb70c;
+}
+#return-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 767.98px) {
+  #return-to-top {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #return-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff;
+  }
+}
 
 /*---------------------NAVIGATION BAR--------------------*/
 .navigation-bar {
@@ -230,8 +291,8 @@ a:hover, a:active, a:focus {
 @media (max-width: 991.98px) {
   .banner .lead {
     font-size: 20px;
-    }
   }
+}
 
 .banner .cover {
   position: absolute;
@@ -284,8 +345,8 @@ a:hover, a:active, a:focus {
 @media (max-width: 991.98px) {
   .banner h1, .intro h1 {
     font-size: 36px;
-    }
   }
+}
 
 /*-------------------PORTFOLIO AREA-----------------------*/
 .portfolio-overlap {
@@ -296,8 +357,8 @@ a:hover, a:active, a:focus {
 @media (max-width: 991.98px) {
   .portfolio-overlap {
     margin-top: -50px;
-    }
   }
+}
 
 /* work detail */
 .work-detail {
@@ -425,11 +486,11 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
-.button.button--yellow {
+.button.button--main {
   background: #ffb70c;
 }
 
-.button.button--yellow:hover {
+.button.button--main:hover {
   text-decoration: none;
   color: #fff;
   -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
