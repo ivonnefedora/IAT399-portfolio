@@ -133,6 +133,10 @@ a:hover, a:active, a:focus {
   margin-left: 2em;
 }
 
+.navigation-bar .site-logo a:hover {
+  color: #ffa30c;
+}
+
 .navigation-bar .menu {
   position: relative;
 }
@@ -525,8 +529,7 @@ a:hover, a:active, a:focus {
   position: relative;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; f
-  font-size: 26px;
+  transition: .3s all ease;
 }
 
 .footer .footer-social a:hover, .footer .footer-social a:focus {
